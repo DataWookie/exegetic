@@ -1,0 +1,8 @@
+Package: exegetic
+Type: Package
+Title: Data for Courses
+Version: 0.1.0
+Authors@R: person("Andrew", "Collier", email = "andrew@exegetic.biz", role = c("aut", "cre"))
+Description: A collection of data used for Exegetic courses.
+Encoding: UTF-8
+LazyData: true
