@@ -1,13 +1,19 @@
 #' Portuguese Bank Direct Marketing Campaign
 #'
+#' The campaign objective was to persuade targets to make a fixed term deposit.
+#'
 #' Data originate from from https://archive.ics.uci.edu/ml/datasets/Bank+Marketing.
+#'
+#' The attributes employment, cpix, ccix, euribor and nemployed give information on social and economic context.
 #'
 #' There are two data sets:
 #'
-#' - `bankmkt_full`: all data
-#' - `bankmkt_smpl`: a 10% random sample
+#' - bankmkt_full: all data
+#' - bankmkt_smpl: a 10\% random sample
 #'
-#' @format A data frame with 100 records and 2 variables:
+#' There might be multiple fields for the same target, reflecting multile contacts.
+#'
+#' @format A data frame with fields:
 #' \describe{
 #'   \item{age}{age (years)}
 #'   \item{job}{type of job}
@@ -20,15 +26,15 @@
 #'   \item{month}{month of previous campaign contact}
 #'   \item{dow}{day of week of previous campaign contact}
 #'   \item{duration}{duration of previous campaign contact (seconds)}
-#'   \item{campaign}{number of previous contacts during campaign}
+#'   \item{campaign}{number of contacts during campaign}
 #'   \item{pdays}{number of days since client was last contacted from a previous campaign}
-#'   \item{previous}{number of contacts before this campaig}
+#'   \item{previous}{number of contacts prior to this campaign}
 #'   \item{poutcome}{outcome of the previous marketing campaign}
 #'   \item{employment}{employment variation rate}
 #'   \item{cpix}{consumer price index}
 #'   \item{ccix}{consumer confidence index}
 #'   \item{euribor}{EURIBOR rate}
-#'   \item{nemployed}{number employed (indicator)}
+#'   \item{nemployed}{number of citizens employed (thousands)}
 #'   \item{subscribed}{did target subscribe?}
 #' }
 'bankmkt_smpl'
